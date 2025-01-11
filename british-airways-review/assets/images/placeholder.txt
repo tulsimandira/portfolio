@@ -1,2 +1,2 @@
 <h2>Screenshots</h2>
-<img src="assets/images/dashboard1.png" alt="Screenshot 1">
+<img src="assets/images/pic1.png" alt="Screenshot 1">
