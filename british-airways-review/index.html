@@ -29,7 +29,7 @@
         h1, h2, h3 {
             color: #007bff;
             font-weight: 600;
-            margin-bottom: 20px; /* Added margin below all headings */
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -79,13 +79,6 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
         footer {
             text-align: center;
             margin-top: 50px;
@@ -105,75 +98,108 @@
 <body>
     <div class="container">
         <h1>British Airways Review Dashboard</h1>
-        <p class="lead">An interactive Tableau dashboard analyzing customer satisfaction for British Airways from 2016 to 2023.</p>
+        <p class="lead">Comprehensive customer feedback analysis for British Airways from March 2016 to October 2023.</p>
         <hr>
 
-        <h2>The Challenge: Understanding the Voice of the Customer</h2>
+        <h2>Project Overview</h2>
         <p>
-            British Airways, like any global airline, faces the challenge of meeting the diverse needs of its customers.
-            Travelers leave reviews that reflect their experiences, from praises for attentive staff to complaints about uncomfortable seats or poor in-flight entertainment.
-            These reviews hold the key to understanding how the airline can improve, but the sheer volume of data makes it hard to pinpoint trends and insights.
+            This dashboard provides a comprehensive analysis of customer feedback and reviews for British Airways from March 2016 to October 2023.
+            Built using Tableau, it visualizes customer ratings across various categories, such as overall satisfaction, cabin staff service, food, entertainment, and seat comfort.
         </p>
         <p>
-            This project was born from a desire to turn raw customer feedback into a clear, actionable story. Using Tableau, I created an interactive dashboard
-            that uncovers the hidden patterns in customer reviews, helping British Airways make data-driven decisions.
+            The dashboard is designed to help stakeholders in the airline industry identify trends, strengths, and improvement opportunities
+            by offering detailed insights into ratings by month, traveler type, region, and aircraft.
         </p>
 
-        <h2>The Journey: Building the Dashboard</h2>
+        <h2>Project Objectives</h2>
+        <ul>
+            <li>Analyze overall and category-specific ratings to understand customer satisfaction.</li>
+            <li>Explore trends over time to identify seasonal variations or recurring challenges.</li>
+            <li>Compare geographic regions to pinpoint areas requiring targeted service improvements.</li>
+            <li>Evaluate aircraft performance to identify models that excel or need attention.</li>
+            <li>Empower stakeholders with interactive filters to customize and deep dive into specific metrics.</li>
+        </ul>
+
+        <h2>Dashboard Breakdown</h2>
+        <h3>1. Key Metrics (Header Section)</h3>
+        <p>Displays the average ratings for each category based on customer reviews:</p>
+        <ul>
+            <li>4.2: Overall Rating</li>
+            <li>3.3: Cabin Staff Service</li>
+            <li>1.4: Entertainment</li>
+            <li>2.4: Food & Beverages</li>
+            <li>3.0: Ground Service</li>
+            <li>2.9: Seat Comfort</li>
+            <li>2.8: Value for Money</li>
+        </ul>
         <p>
-            To tell the story of British Airways' customer satisfaction, I analyzed reviews from March 2016 to October 2023, focusing on:
+            <b>Insights:</b>
+            <ul>
+                <li>Entertainment, food, value for money, and seat comfort are rated the lowest, highlighting critical areas for improvement.</li>
+                <li>Cabin staff service, while above average, still has room for enhancement.</li>
+                <li>The overall score of 4.2 suggests mixed satisfaction, with certain categories dragging the average down.</li>
+            </ul>
+        </p>
+
+        <h3>2. Average Overall Rating By Month (Line Chart)</h3>
+        <p>This chart visualizes how the overall customer rating has changed over time:</p>
+        <p>
+            <b>Insights:</b>
+            <ul>
+                <li>Ratings are inconsistent, with visible fluctuations across months and years.</li>
+                <li>Dips in ratings during specific periods could indicate seasonal challenges (e.g., delays during busy holiday seasons) or operational disruptions (e.g., flight cancellations or staff shortages).</li>
+            </ul>
+        </p>
+
+        <h3>3. Average Overall Rating By Country (Map Visualization)</h3>
+        <p>A geographic heatmap showing the average customer ratings by country:</p>
+        <p>
+            <b>Insights:</b>
+            <ul>
+                <li>High-performing regions (dark green) reflect strong service consistency or customer loyalty.</li>
+                <li>Underperforming regions (light green) signal areas where the airline may face operational challenges, cultural mismatches, or unmet customer expectations.</li>
+            </ul>
+        </p>
+
+        <h3>4. Average Overall Rating By Aircraft (Bar Chart)</h3>
+        <p>A horizontal bar chart compares the average customer ratings for different aircraft types alongside the number of reviews for each:</p>
+        <ul>
+            <li>Boeing 747-400 has the highest rating (4.7) but fewer reviews (97).</li>
+            <li>Boeing 777 has a solid rating (4.4) with the highest number of reviews (263).</li>
+            <li>A321 has the lowest rating (3.6), reflecting potential comfort or performance issues.</li>
+        </ul>
+        <p>
+            <b>Insights:</b>
+            <ul>
+                <li>Aircraft like the Boeing 747-400 and Boeing 787 consistently receive higher ratings, indicating positive customer experiences.</li>
+                <li>Aircraft like the A321 and A319 underperform, suggesting the need for further investigation into passenger dissatisfaction (e.g., seating arrangements, onboard features).</li>
+            </ul>
+        </p>
+
+        <h3>5. Interactive Filters</h3>
+        <p>
+            Interactive filters make the dashboard dynamic and user-friendly. You can view visualizations by choosing each metric separately:
         </p>
         <ul>
-            <li>Cabin staff service</li>
-            <li>Entertainment</li>
-            <li>Food and beverages</li>
-            <li>Seat comfort</li>
-            <li>Value for money</li>
+            <li><b>Pick a Metric:</b> Explore specific categories (overall rating, food, entertainment, seat comfort, etc.).</li>
+            <li><b>Time Range (March 2016 - October 2023):</b> Adjust the date range to analyze trends over specific periods.</li>
+            <li><b>Traveler Type:</b> Segment ratings by traveler type (e.g., business, couple leisure, family leisure, solo leisure).</li>
+            <li><b>Seat Type:</b> Filter by ticket class (e.g., business class, economy class, premium economy, first class).</li>
+            <li><b>Aircraft Group:</b> Focus on individual aircraft models to compare performance.</li>
+            <li><b>Continent:</b> Narrow down ratings by region.</li>
         </ul>
+
+        <h2>Key Findings</h2>
+        <ul>
+            <li><b>Entertainment and Food Are the Weakest Areas:</b> Ratings of 1.4 and 2.4 highlight significant dissatisfaction in these areas.</li>
+            <li><b>Aircraft Performance:</b> Boeing 747-400 and Boeing 777 excel in ratings, while A321 and A319 underperform.</li>
+            <li><b>Geographic Variations:</b> Tailoring services to underperforming regions could improve satisfaction.</li>
+            <li><b>Seasonal Trends:</b> Seasonal dips in ratings suggest challenges during peak times.</li>
+        </ul>
+
+        <h2>Interactive Dashboard Link</h2>
         <p>
-            The result? An interactive dashboard that gives stakeholders the power to:
-        </p>
-        <ul>
-            <li>Spot trends over time.</li>
-            <li>Compare customer ratings across regions, traveler types, and seat classes.</li>
-            <li>Understand which aircraft models delight passengers—and which fall short.</li>
-        </ul>
-
-        <h2>The Insights: What We Discovered</h2>
-        <h3>1. Strengths: Where British Airways Shines</h3>
-        <ul>
-            <li><b>Cabin Staff Service:</b> With an average rating of 3.3, passengers consistently praise the professionalism and friendliness of the airline’s crew.</li>
-            <li><b>Top-Performing Aircraft:</b> The Boeing 747-400 emerges as a crowd favorite, scoring an impressive 4.7 in overall satisfaction.</li>
-        </ul>
-        <h3>2. Weaknesses: Areas That Need Attention</h3>
-        <ul>
-            <li><b>Entertainment:</b> With an abysmal score of 1.4, passengers are clearly dissatisfied with in-flight entertainment options. Whether it's outdated screens or a lack of variety, this is a major area for improvement.</li>
-            <li><b>Food and Beverages:</b> At 2.4, customers find the quality and variety of meals underwhelming.</li>
-            <li><b>Value for Money:</b> A score of 2.8 reflects passengers feeling they aren’t getting what they pay for.</li>
-        </ul>
-
-        <h3>3. Regional Stories: Satisfaction Varies by Geography</h3>
-        <ul>
-            <li><b>High-Rated Regions:</b> Certain countries consistently rate British Airways highly, suggesting strong service delivery or loyalty in those markets.</li>
-            <li><b>Low-Rated Regions:</b> Lighter areas on the map reveal regions where passengers leave dissatisfied, possibly due to cultural mismatches or operational challenges.</li>
-        </ul>
-
-        <h3>4. Fleet Insights: The Role of Aircraft in Customer Satisfaction</h3>
-        <ul>
-            <li><b>Top Performers:</b> The Boeing 747-400 and Boeing 787 deliver excellent experiences, with scores of 4.7 and 4.4, respectively.</li>
-            <li><b>Underperformers:</b> The A321 lags behind with a score of 3.6, signaling issues with comfort or amenities that need to be addressed.</li>
-        </ul>
-
-        <h2>The Tools Behind the Story</h2>
-        <ul>
-            <li><b>Tableau:</b> For creating the interactive dashboard and visualizing the data.</li>
-            <li><b>Data Analysis:</b> Aggregating and cleaning customer review data to uncover trends.</li>
-            <li><b>Storytelling with Data:</b> Highlighting actionable insights to drive business decisions.</li>
-        </ul>
-
-        <h2>Explore the Dashboard</h2>
-        <p>
-            See the story unfold for yourself:
+            Explore the full dashboard here:
             <a href="https://public.tableau.com/views/BritishAirwaysReview_17354789714040/Dashboard1" target="_blank" class="btn btn-primary">View the Dashboard</a>
         </p>
 
