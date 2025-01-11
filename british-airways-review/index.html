@@ -163,8 +163,189 @@
         <!-- Dashboard Image -->
         <h2>Dashboard Visualization</h2>
         <p>Below is a snapshot of the dashboard for a quick preview:</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Airways Review Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #e3f2fd, #f8f9fa);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        p.lead {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            font-size: 0.9rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>British Airways Review Dashboard</h1>
+        <p class="lead">Comprehensive customer feedback analysis for British Airways from March 2016 to October 2023.</p>
+        <hr>
+
+        <!-- Storytelling Paragraph -->
+        <p>
+            British Airways has long been a symbol of trust and luxury in air travel. Yet, like every airline, it faces its share of challenges in meeting
+            the diverse expectations of its customers. What do passengers truly think of their experiences? What makes them choose British Airways repeatedly,
+            and what pushes them toward alternatives? This project dives deep into the voice of the customer, uncovering insights hidden in years of
+            reviews to tell a data-driven story about satisfaction, strengths, and opportunities for improvement.
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>
+            This dashboard provides a comprehensive analysis of customer feedback and reviews for British Airways from March 2016 to October 2023.
+            Built using Tableau, it visualizes customer ratings across various categories, such as overall satisfaction, cabin staff service, food, entertainment, and seat comfort.
+        </p>
+        <p>
+            The dashboard is designed to help stakeholders in the airline industry identify trends, strengths, and improvement opportunities
+            by offering detailed insights into ratings by month, traveler type, region, and aircraft.
+        </p>
+
+        <h2>Project Objectives</h2>
+        <ul>
+            <li>Analyze overall and category-specific ratings to understand customer satisfaction.</li>
+            <li>Explore trends over time to identify seasonal variations or recurring challenges.</li>
+            <li>Compare geographic regions to pinpoint areas requiring targeted service improvements.</li>
+            <li>Evaluate aircraft performance to identify models that excel or need attention.</li>
+            <li>Empower stakeholders with interactive filters to customize and deep dive into specific metrics.</li>
+        </ul>
+
+        <h2>Dashboard Breakdown</h2>
+        <h3>1. Key Metrics </h3>
+        <p>
+            The dashboard displays the average ratings across critical categories based on customer reviews. The overall rating is 4.2, reflecting a mix of
+            satisfaction levels. Cabin staff service is rated at 3.3, showcasing the professionalism and friendliness of the airline’s crew. However, entertainment
+            is rated at a disappointing 1.4, indicating a significant gap in meeting customer expectations in this area. Food and beverages score 2.4, highlighting
+            the need for better meal quality and variety. Ground service scores 3.0, while seat comfort and value for money are rated at 2.9 and 2.8, respectively,
+            suggesting these areas also require further attention to enhance the customer experience.
+        </p>
+
+        <h3>2. Average Overall Rating By Month (Line Chart)</h3>
+        <p>
+            This chart visualizes how the overall customer rating has changed over time. Ratings show visible fluctuations across months and years, with dips during
+            specific periods suggesting seasonal challenges, such as delays during peak travel seasons or operational disruptions like cancellations or staff shortages.
+        </p>
+
+        <h3>3. Average Overall Rating By Country (Map Visualization)</h3>
+        <p>
+            The geographic heatmap illustrates customer satisfaction by country. Darker regions represent higher satisfaction levels, indicating consistent service quality
+            and customer loyalty. In contrast, lighter regions highlight areas where operational challenges, cultural mismatches, or unmet customer expectations may exist,
+            necessitating targeted service improvements.
+        </p>
+
+        <h3>4. Average Overall Rating By Aircraft (Bar Chart)</h3>
+        <p>
+            The bar chart compares the average customer ratings for different aircraft types alongside the number of reviews for each. The Boeing 747-400 has the highest
+            rating at 4.7, though it has fewer reviews (97). The Boeing 777, with the highest number of reviews (263), scores 4.4, indicating consistent customer satisfaction.
+            In contrast, the A321 has the lowest rating of 3.6, suggesting potential issues with cabin comfort or design that require further investigation.
+        </p>
+
+        <h3>5. Interactive Filters</h3>
+        <p>
+            Interactive filters make the dashboard dynamic and user-friendly. Users can view visualizations by choosing specific metrics such as food, entertainment, or
+            seat comfort. Filters for time range (March 2016 to October 2023), traveler type (e.g., business, leisure), seat type (economy, premium, business class),
+            aircraft group, and region allow stakeholders to dive deep into tailored insights, enabling more precise decision-making.
+        </p>
+
+        <h2>Key Findings</h2>
+        <ul>
+            <li><b>Entertainment and Food Are the Weakest Areas:</b> Ratings of 1.4 and 2.4 highlight significant dissatisfaction in these areas.</li>
+            <li><b>Aircraft Performance:</b> Boeing 747-400 and Boeing 777 excel in ratings, while A321 and A319 underperform.</li>
+            <li><b>Geographic Variations:</b> Tailoring services to underperforming regions could improve satisfaction.</li>
+            <li><b>Seasonal Trends:</b> Seasonal dips in ratings suggest challenges during peak times.</li>
+        </ul>
+
+        <!-- Dashboard Image -->
+        <h2>Dashboard Visualization</h2>
+        <p>Below is a snapshot of the dashboard for a quick preview:</p>
 <img src="assets/images/dashboard1.png" alt="British Airways Dashboard Snapshot">
 
+                <h2>Interactive Dashboard Link</h2>
+        <p>
+            Explore the full dashboard here:
+            <a href="https://public.tableau.com/views/BritishAirwaysReview_17354789714040/Dashboard1" target="_blank" class="btn btn-primary">View the Dashboard</a>
+        </p>
+
+
+        <footer>
+            <p>© 2025 British Airways Review | Designed by <a href="#">Tulsi Mandira</a></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
                 <h2>Interactive Dashboard Link</h2>
         <p>
             Explore the full dashboard here:
