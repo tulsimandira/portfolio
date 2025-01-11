@@ -1,1 +1,2 @@
-
+<h2>Screenshots</h2>
+<img src="assets/images/dashboard2.png" alt="Screenshot 2">
