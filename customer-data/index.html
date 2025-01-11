@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Analysis Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        p.lead {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #007bff;
+            font-size: 1.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            font-size: 0.9rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Analysis Dashboard</h1>
+        <p class="lead">A comprehensive and interactive analysis of customer purchasing behavior, revenue, and sales patterns.</p>
+        <hr>
+
+        <h2>Project Overview</h2>
+        <p>
+            The Customer Analysis Dashboard provides an in-depth look at customer purchasing patterns, sales trends, and revenue generation across 
+            various dimensions. Built using Tableau, it enables businesses to uncover actionable insights and make data-driven decisions.
+        </p>
+        <p>
+            This dashboard allows users to explore data across <strong>15 categories</strong>: Appliances, Beauty & Grooming, Books, Computing, Entertainment, 
+            Health & Sports, Home & Living, Kids & Baby, Men’s Fashion, Mobiles & Tablets, Others, School & Education, Soghaat, Superstore, and Women’s Fashion.
+        </p>
+
+        <h2>Insights from the Dashboard</h2>
+
+        <h3>Month-Wise Revenue</h3>
+        <p>
+            The month-wise revenue trend highlights seasonal variations in sales performance. Peaks are observed in December, driven by holiday shopping, 
+            and April, likely due to spring promotions. Off-peak months like January and July provide opportunities to boost sales through targeted campaigns.
+        </p>
+
+        <h3>Revenue per State</h3>
+        <p>
+            A heatmap visualizes state-level revenue contributions. States like California, Texas, and New York show the highest revenue, while states 
+            such as Alaska and Vermont contribute less, indicating potential areas for market expansion.
+        </p>
+
+        <h3>Region-Wise Revenue Share</h3>
+        <p>
+            The pie chart reveals revenue distribution across regions. The South leads with 38.37% of total revenue, followed by the Midwest at 26.93%. 
+            The West and Northeast have lower contributions, highlighting areas to focus on for future growth.
+        </p>
+
+        <h3>Gender-Wise Sales Analysis</h3>
+        <p>
+            This chart divides sales revenue by gender and category. Female customers significantly drive revenue in Women’s Fashion and Beauty & Grooming, 
+            while male customers dominate Mobiles & Tablets and Appliances. Balanced contributions are seen in Books and School & Education.
+        </p>
+
+        <h3>Age-Wise Revenue</h3>
+        <p>
+            The age-wise revenue chart shows that customers aged 30-40 contribute the most revenue, followed by those aged 60-70. Younger customers (<20) 
+            and older customers (>70) have lower contributions, providing insights into demographic-specific marketing strategies.
+        </p>
+
+        <h3>Quantity-Discount Correlation</h3>
+        <p>
+            The scatter plot analyzes how discounts impact purchasing behavior. Higher discounts often correlate with increased quantities ordered, though 
+            excessive discounts show diminishing returns, highlighting the need for strategic pricing.
+        </p>
+
+        <h2>Interactive Features</h2>
+        <p>
+            The dashboard includes interactive filters that enable users to:
+        </p>
+        <ul>
+            <li>Analyze specific categories (e.g., Entertainment, Computing, Mobiles & Tablets).</li>
+            <li>Focus on specific demographics by filtering by gender, age group, or region.</li>
+            <li>Adjust the time range to identify seasonal patterns or trends over the years.</li>
+        </ul>
+
+        <h2>Dashboard Visualization</h2>
+        <p>Below is a snapshot of the dashboard for a quick preview:</p>
+        <img src="customer-analysis/assets/images/dashboard2.png" alt="Customer Analysis Dashboard Snapshot">
+
+        <h2>Interactive Dashboard Link</h2>
+        <p>
+            Explore the full dashboard here:
+            <a href="https://public.tableau.com/views/CustomerAnalysis_17336741702100/Dashboard1?:language=en-US" target="_blank" class="btn btn-primary">View the Dashboard</a>
+        </p>
+
+        <footer>
+            <p>© 2025 Customer Analysis Dashboard | Designed by <a href="#">Tulsi Mandira</a></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
