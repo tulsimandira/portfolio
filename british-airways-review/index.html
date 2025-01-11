@@ -44,24 +44,11 @@
             margin-bottom: 30px;
         }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-
-        ul li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #007bff;
-            font-size: 1.5rem;
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .btn-primary {
@@ -130,72 +117,40 @@
 
         <h2>Dashboard Breakdown</h2>
         <h3>1. Key Metrics (Header Section)</h3>
-        <p>Displays the average ratings for each category based on customer reviews:</p>
-        <ul>
-            <li>4.2: Overall Rating</li>
-            <li>3.3: Cabin Staff Service</li>
-            <li>1.4: Entertainment</li>
-            <li>2.4: Food & Beverages</li>
-            <li>3.0: Ground Service</li>
-            <li>2.9: Seat Comfort</li>
-            <li>2.8: Value for Money</li>
-        </ul>
         <p>
-            <b>Insights:</b>
-            <ul>
-                <li>Entertainment, food, value for money, and seat comfort are rated the lowest, highlighting critical areas for improvement.</li>
-                <li>Cabin staff service, while above average, still has room for enhancement.</li>
-                <li>The overall score of 4.2 suggests mixed satisfaction, with certain categories dragging the average down.</li>
-            </ul>
+            The dashboard displays the average ratings across critical categories based on customer reviews. The overall rating is 4.2, reflecting a mix of
+            satisfaction levels. Cabin staff service is rated at 3.3, showcasing the professionalism and friendliness of the airline’s crew. However, entertainment
+            is rated at a disappointing 1.4, indicating a significant gap in meeting customer expectations in this area. Food and beverages score 2.4, highlighting
+            the need for better meal quality and variety. Ground service scores 3.0, while seat comfort and value for money are rated at 2.9 and 2.8, respectively,
+            suggesting these areas also require further attention to enhance the customer experience.
         </p>
 
         <h3>2. Average Overall Rating By Month (Line Chart)</h3>
-        <p>This chart visualizes how the overall customer rating has changed over time:</p>
         <p>
-            <b>Insights:</b>
-            <ul>
-                <li>Ratings are inconsistent, with visible fluctuations across months and years.</li>
-                <li>Dips in ratings during specific periods could indicate seasonal challenges (e.g., delays during busy holiday seasons) or operational disruptions (e.g., flight cancellations or staff shortages).</li>
-            </ul>
+            This chart visualizes how the overall customer rating has changed over time. Ratings show visible fluctuations across months and years, with dips during
+            specific periods suggesting seasonal challenges, such as delays during peak travel seasons or operational disruptions like cancellations or staff shortages.
         </p>
 
         <h3>3. Average Overall Rating By Country (Map Visualization)</h3>
-        <p>A geographic heatmap showing the average customer ratings by country:</p>
         <p>
-            <b>Insights:</b>
-            <ul>
-                <li>High-performing regions (dark green) reflect strong service consistency or customer loyalty.</li>
-                <li>Underperforming regions (light green) signal areas where the airline may face operational challenges, cultural mismatches, or unmet customer expectations.</li>
-            </ul>
+            The geographic heatmap illustrates customer satisfaction by country. Darker regions represent higher satisfaction levels, indicating consistent service quality
+            and customer loyalty. In contrast, lighter regions highlight areas where operational challenges, cultural mismatches, or unmet customer expectations may exist,
+            necessitating targeted service improvements.
         </p>
 
         <h3>4. Average Overall Rating By Aircraft (Bar Chart)</h3>
-        <p>A horizontal bar chart compares the average customer ratings for different aircraft types alongside the number of reviews for each:</p>
-        <ul>
-            <li>Boeing 747-400 has the highest rating (4.7) but fewer reviews (97).</li>
-            <li>Boeing 777 has a solid rating (4.4) with the highest number of reviews (263).</li>
-            <li>A321 has the lowest rating (3.6), reflecting potential comfort or performance issues.</li>
-        </ul>
         <p>
-            <b>Insights:</b>
-            <ul>
-                <li>Aircraft like the Boeing 747-400 and Boeing 787 consistently receive higher ratings, indicating positive customer experiences.</li>
-                <li>Aircraft like the A321 and A319 underperform, suggesting the need for further investigation into passenger dissatisfaction (e.g., seating arrangements, onboard features).</li>
-            </ul>
+            The bar chart compares the average customer ratings for different aircraft types alongside the number of reviews for each. The Boeing 747-400 has the highest
+            rating at 4.7, though it has fewer reviews (97). The Boeing 777, with the highest number of reviews (263), scores 4.4, indicating consistent customer satisfaction.
+            In contrast, the A321 has the lowest rating of 3.6, suggesting potential issues with cabin comfort or design that require further investigation.
         </p>
 
         <h3>5. Interactive Filters</h3>
         <p>
-            Interactive filters make the dashboard dynamic and user-friendly. You can view visualizations by choosing each metric separately:
+            Interactive filters make the dashboard dynamic and user-friendly. Users can view visualizations by choosing specific metrics such as food, entertainment, or
+            seat comfort. Filters for time range (March 2016 to October 2023), traveler type (e.g., business, leisure), seat type (economy, premium, business class),
+            aircraft group, and region allow stakeholders to dive deep into tailored insights, enabling more precise decision-making.
         </p>
-        <ul>
-            <li><b>Pick a Metric:</b> Explore specific categories (overall rating, food, entertainment, seat comfort, etc.).</li>
-            <li><b>Time Range (March 2016 - October 2023):</b> Adjust the date range to analyze trends over specific periods.</li>
-            <li><b>Traveler Type:</b> Segment ratings by traveler type (e.g., business, couple leisure, family leisure, solo leisure).</li>
-            <li><b>Seat Type:</b> Filter by ticket class (e.g., business class, economy class, premium economy, first class).</li>
-            <li><b>Aircraft Group:</b> Focus on individual aircraft models to compare performance.</li>
-            <li><b>Continent:</b> Narrow down ratings by region.</li>
-        </ul>
 
         <h2>Key Findings</h2>
         <ul>
@@ -210,6 +165,11 @@
             Explore the full dashboard here:
             <a href="https://public.tableau.com/views/BritishAirwaysReview_17354789714040/Dashboard1" target="_blank" class="btn btn-primary">View the Dashboard</a>
         </p>
+
+        <!-- Dashboard Image -->
+        <h2>Dashboard Visualization</h2>
+        <p>Below is a snapshot of the dashboard for a quick preview:</p>
+        <img src="assets/images/dashboard1.png" alt="British Airways Dashboard Snapshot">
 
         <footer>
             <p>© 2025 British Airways Review | Designed by <a href="#">Tulsi Mandira</a></p>
