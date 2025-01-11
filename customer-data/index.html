@@ -11,67 +11,79 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom right, #f3f4f6, #ffffff);
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
             color: #333;
             margin: 0;
             padding: 0;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-        }
-
-        h1 {
-            color: #007bff;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 600;
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
 
-        h2 {
-            color: #0056b3;
-            margin-top: 20px;
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
         }
 
-        p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 20px;
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            max-width: 900px;
+        }
+
+        h2, h3 {
+            color: #007bff;
+            font-weight: 600;
         }
 
         ul {
-            list-style: none;
-            padding: 0;
+            list-style-type: disc;
+            margin-left: 20px;
         }
 
-        ul li {
-            margin: 10px 0;
+        .btn-primary {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         img {
             max-width: 100%;
-            height: auto;
             border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            margin-top: 30px;
+            background: #007bff;
+            color: #fff;
             text-align: center;
-            color: #777;
+            padding: 20px 0;
+            margin-top: 30px;
             font-size: 0.9rem;
         }
 
         footer a {
+            color: #ffdd57;
             text-decoration: none;
-            color: #007bff;
         }
 
         footer a:hover {
@@ -80,28 +92,32 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Customer Analysis Dashboard</h1>
+    </header>
+
+    <div class="container">
         <p>
-            The Customer Analysis Dashboard provides a detailed and interactive view of customer purchasing behavior, revenue generation, and sales patterns across various dimensions. This project showcases how businesses can derive actionable insights from data to understand their performance better, identify growth opportunities, and refine strategies.
+            The Customer Analysis Dashboard provides a detailed and interactive view of customer purchasing behavior, revenue generation, and sales patterns across various dimensions.
         </p>
-        <p>
-            This dashboard analyzes customer behavior across different categories, regions, genders, age groups, and time periods, all while offering the flexibility to dive deeper using dynamic filters. It is built to help businesses answer crucial questions such as:
-        </p>
+        <p>Here are the key insights and features of the dashboard:</p>
+
+        <h2>Key Highlights</h2>
         <ul>
-            <li>Which product categories contribute the most to revenue?</li>
-            <li>How does revenue vary across regions and states?</li>
-            <li>What demographic segments are the primary contributors?</li>
-            <li>How do discounts affect quantity ordered?</li>
+            <li>Analyze customer behavior across categories, regions, genders, age groups, and time periods.</li>
+            <li>Answer critical business questions such as:
+                <ul>
+                    <li>Which product categories contribute the most to revenue?</li>
+                    <li>How does revenue vary across regions and states?</li>
+                    <li>What demographic segments are the primary contributors?</li>
+                    <li>How do discounts affect quantity ordered?</li>
+                </ul>
+            </li>
+            <li>Interactive filters allow users to dive deeper into specific segments and tailor their analysis.</li>
         </ul>
-        <p>
-            The ability to filter by category, time period, and demographic details ensures that users can focus on specific segments and tailor their decision-making process.
-        </p>
 
         <h2>Revenue by Categories</h2>
-        <p>
-            The dashboard breaks down revenue into 15 distinct product categories:
-        </p>
+        <p>The dashboard breaks down revenue into 15 distinct product categories:</p>
         <ul>
             <li>Appliances</li>
             <li>Beauty & Grooming</li>
@@ -120,62 +136,66 @@
             <li>Women’s Fashion</li>
         </ul>
         <p>
-            The analysis shows that Mobiles & Tablets and Women’s Fashion dominate revenue, with substantial contributions from Appliances, Beauty & Grooming, and Superstore. Meanwhile, categories such as Books, Health & Sports, and Soghaat show potential for growth, highlighting opportunities for businesses to invest in underperforming segments.
+            Key findings include:
+            <ul>
+                <li>Mobiles & Tablets and Women’s Fashion dominate revenue.</li>
+                <li>Appliances, Beauty & Grooming, and Superstore also show strong contributions.</li>
+                <li>Categories like Books, Health & Sports, and Soghaat show potential for growth.</li>
+            </ul>
         </p>
 
         <h2>Revenue per State</h2>
-        <p>
-            The Revenue per State Map visualizes how sales are distributed geographically across the United States. Using a heatmap, it highlights states with higher revenue contributions in darker shades of orange:
-        </p>
-        <p>
-            States such as California, Texas, and New York consistently generate high revenue. Smaller contributions are observed in less populous states such as Alaska and Vermont, which could indicate limited market penetration or a smaller customer base.
-        </p>
+        <ul>
+            <li>The heatmap visualizes revenue distribution across states.</li>
+            <li>High-performing states include California, Texas, and New York.</li>
+            <li>Lower contributions are observed in states like Alaska and Vermont.</li>
+        </ul>
 
         <h2>Monthly Revenue Trends</h2>
-        <p>
-            The Month-Wise Revenue Chart tracks sales performance over time, revealing peaks and troughs that highlight seasonal trends:
-        </p>
-        <p>
-            Revenue spikes are evident in December, driven by holiday shopping, and in April, potentially due to spring promotions. Periods like January and July show lower revenue, suggesting off-peak seasons.
-        </p>
+        <ul>
+            <li>The Month-Wise Revenue chart tracks revenue trends over time.</li>
+            <li>Revenue spikes in December (holiday shopping) and April (spring promotions).</li>
+            <li>Lower revenue is observed in January and July, indicating off-peak seasons.</li>
+        </ul>
 
         <h2>Region-Wise Revenue Share</h2>
-        <p>
-            The Region-Wise Revenue Pie Chart divides total revenue by geographic regions, providing a quick snapshot of where sales are strongest:
-        </p>
-        <p>
-            The South leads with 38.37% of total revenue, followed by the Midwest (26.93%) and the West (17.60%). The Northeast lags slightly at 17.10%, offering opportunities to focus on customer engagement in this region.
-        </p>
+        <ul>
+            <li>The pie chart illustrates revenue contribution by region:</li>
+            <li>South: 38.37%</li>
+            <li>Midwest: 26.93%</li>
+            <li>West: 17.60%</li>
+            <li>Northeast: 17.10%</li>
+        </ul>
 
         <h2>Gender-Wise Sales Analysis</h2>
-        <p>
-            The Gender-Wise Revenue Bar Chart showcases how male and female customers contribute to revenue across different categories:
-        </p>
-        <p>
-            Female customers drive significant revenue in Women’s Fashion ($15.04M) and Beauty & Grooming ($1.37M). Male customers dominate in Mobiles & Tablets ($66.27M) and Appliances ($13.45M).
-        </p>
+        <ul>
+            <li>Female customers dominate revenue in Women’s Fashion and Beauty & Grooming.</li>
+            <li>Male customers lead in Mobiles & Tablets and Appliances.</li>
+            <li>Categories like Books and School & Education show balanced contributions.</li>
+        </ul>
 
         <h2>Age-Wise Revenue Analysis</h2>
-        <p>
-            The Age-Wise Revenue Bar Chart explains how different age groups contribute to total revenue. The 30-40 age group generates the highest revenue at $44.8M, followed by 60-70 years ($41.1M).
-        </p>
+        <ul>
+            <li>The 30-40 age group generates the highest revenue ($44.8M).</li>
+            <li>The 60-70 age group follows closely with $41.1M.</li>
+            <li>Young customers (<20 years) and older customers (>70 years) contribute the least.</li>
+        </ul>
 
         <h2>Quantity-Discount Correlation</h2>
-        <p>
-            The Scatter Plot visualizes the relationship between the discount percentage and the quantity ordered. A clear trend emerges, showing that higher discounts often lead to larger quantities being ordered.
-        </p>
+        <ul>
+            <li>The scatter plot shows how discounts impact quantity ordered.</li>
+            <li>Higher discounts generally lead to larger quantities being ordered.</li>
+            <li>Excessive discounts show diminishing returns, emphasizing the need for strategic pricing.</li>
+        </ul>
 
         <h2>Interactive Features</h2>
-        <p>
-            The dashboard’s interactive filters make it a versatile tool for in-depth analysis. Users can:
-        </p>
         <ul>
-            <li>Select one or more categories to analyze revenue and purchasing behavior.</li>
-            <li>Filter by gender, age group, and region to explore demographic-specific insights.</li>
-            <li>Adjust the time range to focus on seasonal patterns or specific years.</li>
+            <li>Filter by category, gender, age group, and region for detailed analysis.</li>
+            <li>Adjust time range to explore seasonal trends or specific years.</li>
         </ul>
 
         <h2>Dashboard Visualization</h2>
+        <p>Below is a snapshot of the dashboard for a quick preview:</p>
         <img src="assets/images/dashboard2.png" alt="Customer Analysis Dashboard Snapshot">
 
         <h2>Interactive Dashboard Link</h2>
@@ -184,6 +204,7 @@
             <a href="https://public.tableau.com/views/CustomerAnalysis_17336741702100/Dashboard1" target="_blank" class="btn btn-primary">View the Dashboard</a>
         </p>
     </div>
+
     <footer>
         <p>© 2025 Customer Analysis Dashboard | Designed by <a href="#">Tulsi Mandira</a></p>
     </footer>
