@@ -19,15 +19,16 @@
 
         nav {
             background-color: #007bff;
-            padding: 10px 20px;
+            padding: 15px 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
+            margin: 0 20px;
+            font-size: 1.2rem;
             font-weight: 600;
         }
 
@@ -36,7 +37,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 50px auto;
             background: #ffffff;
             border-radius: 15px;
@@ -45,45 +46,68 @@
             text-align: center;
         }
 
-        h1 {
+        h1, h2 {
             color: #007bff;
-            font-size: 3rem;
-            margin-bottom: 20px;
             font-weight: 700;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
         }
 
         p {
             font-size: 1.2rem;
             color: #555;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .project-buttons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
         }
 
-        ul li {
-            margin: 15px 0;
+        .project {
+            width: 280px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
 
-        ul li a {
+        .project img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project a {
+            display: block;
             text-decoration: none;
-            color: #ffffff;
-            background: linear-gradient(to right, #007bff, #0056b3);
-            padding: 15px 30px;
-            border-radius: 50px;
+            background: #007bff;
+            color: white;
+            padding: 10px;
             font-weight: 600;
             font-size: 1rem;
-            display: inline-block;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.3);
+            border-radius: 0 0 15px 15px;
+            transition: background 0.3s;
         }
 
-        ul li a:hover {
+        .project a:hover {
             background: #0056b3;
-            box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
-            transform: scale(1.05);
         }
 
         footer {
@@ -102,45 +126,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        .about, .contact {
-            text-align: center;
-        }
-
-        .about img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .about h2, .contact h2 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-
-        .contact form input, .contact form textarea {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact form button {
-            background: linear-gradient(to right, #28a745, #218838);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .contact form button:hover {
-            background: #218838;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
     </style>
 </head>
 <body>
@@ -153,28 +138,41 @@
 
     <section id="home" class="container">
         <h1>Welcome to My Portfolio</h1>
-        <p>Explore my featured projects below and discover the work I'm passionate about:</p>
-        <ul>
-            <li><a href="pizza-sales/" target="_blank">Pizza Sales Dashboard</a></li>
-            <li><a href="british-airways-review/" target="_blank">British Airways Review Dashboard</a></li>
-            <li><a href="customer-data/" target="_blank">Customer Analysis Dashboard</a></li>
-        </ul>
+        <p>Discover my featured projects and learn more about what I do:</p>
     </section>
 
-    <section id="about" class="container about">
-        <img src="https://via.placeholder.com/150" alt="Your Photo">
+    <section id="about" class="container">
         <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate [Your Profession, e.g., Data Analyst, Web Developer]. I specialize in [mention your skills briefly, e.g., data analysis, web development, etc.]. I love solving complex problems and creating impactful solutions.</p>
-        <p>When I'm not working, I enjoy [mention hobbies/interests, e.g., hiking, photography, etc.].</p>
+        <p>Hello! I'm [Your Name], a passionate [Your Profession, e.g., Data Analyst or Web Developer]. I specialize in creating impactful solutions through [your area of expertise, e.g., data visualization, software development, etc.].</p>
+        <p>When I'm not working, I enjoy [hobbies or interests, e.g., traveling, photography, coding, etc.].</p>
     </section>
 
-    <section id="contact" class="container contact">
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-buttons">
+            <div class="project">
+                <img src="https://via.placeholder.com/280x180" alt="Pizza Sales Dashboard">
+                <a href="pizza-sales/" target="_blank">Pizza Sales Dashboard</a>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/280x180" alt="British Airways Review">
+                <a href="british-airways-review/" target="_blank">British Airways Review</a>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/280x180" alt="Customer Analysis Dashboard">
+                <a href="customer-data/" target="_blank">Customer Analysis Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
         <h2>Contact Me</h2>
+        <p>If you'd like to work together or learn more, feel free to send me a message:</p>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+            <textarea rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea>
+            <button type="submit" style="background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: 600;">Send Message</button>
         </form>
     </section>
 
