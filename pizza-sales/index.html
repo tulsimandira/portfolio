@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Sales Report Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #e3f2fd, #f8f9fa);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1, h2 {
+            color: #007bff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #0056b3;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            font-size: 0.9rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Sales Report Dashboard</h1>
+        <p class="lead">Comprehensive analysis of pizza sales performance across various categories, times, and customer segments.</p>
+        <hr>
+
+        <!-- Storytelling Section -->
+        <p>
+            Pizza is not just a meal—it’s a cultural phenomenon. Businesses must understand the nuances of customer behavior, product preferences, and revenue patterns to thrive in a competitive market. This dashboard takes a deep dive into pizza sales, uncovering actionable insights from detailed sales data. Using two interconnected dashboards, the analysis reveals valuable trends in pizza sales, highlighting what sells, when it sells, and where it sells the most.
+        </p>
+
+        <h2>Dashboard 1: Sales Overview</h2>
+        <h3>Total Revenue and KPIs</h3>
+        <p>
+            This section presents key performance indicators (KPIs) at a glance:
+            <ul>
+                <li><b>Total Revenue:</b> $817.9K—The overall earnings from all pizzas sold.</li>
+                <li><b>Average Order Value:</b> $38.31—The average amount spent per order.</li>
+                <li><b>Total Pizzas Sold:</b> 49.6K—The total number of pizzas purchased by customers.</li>
+                <li><b>Total Orders:</b> 21.4K—The total number of individual orders placed.</li>
+                <li><b>Average Pizzas per Order:</b> 2.32—The average number of pizzas included in each order.</li>
+            </ul>
+            These KPIs offer a comprehensive snapshot of business performance.
+        </p>
+
+        <h3>Hourly Trend of Total Pizzas Sold</h3>
+        <p>
+            A bar chart visualizes pizza sales by the hour. Sales peak between 12 PM and 1 PM during lunch hours and again from 4 PM to 7 PM in the evening. These trends reveal customer dining habits and help optimize staffing and delivery logistics.
+        </p>
+
+        <h3>Weekly Trends for Total Orders</h3>
+        <p>
+            The line chart tracks weekly order volumes, highlighting a pronounced spike in the 48th week of the year. This aligns with holiday shopping and celebrations, making it a critical period for maximizing sales through promotions and inventory readiness.
+        </p>
+
+        <h3>Percentage of Sales by Pizza Category</h3>
+        <p>
+            A donut chart breaks down revenue by pizza categories:
+            <ul>
+                <li><b>Classic:</b> 26.91%—The leading category in sales contribution.</li>
+                <li><b>Veggie:</b> 23.68%—Catering to health-conscious customers.</li>
+                <li><b>Supreme:</b> 25.46%—Popular among premium pizza enthusiasts.</li>
+                <li><b>Chicken:</b> 23.96%—A strong contender in revenue generation.</li>
+            </ul>
+        </p>
+
+        <h3>Percentage of Sales by Pizza Size</h3>
+        <p>
+            A horizontal bar chart evaluates sales by pizza size:
+            <ul>
+                <li><b>Large:</b> 45.9%—The top-selling size, appealing to group diners.</li>
+                <li><b>Medium:</b> 30.5%—A favorite among small families and individuals.</li>
+                <li><b>Regular:</b> 21.8%—Catering to single customers and quick meals.</li>
+                <li><b>Extra Large and XXL:</b> Minor contributions highlight niche appeal.</li>
+            </ul>
+        </p>
+
+        <h3>Total Orders and Pizzas Sold by Pizza Category</h3>
+        <p>
+            This stacked bar chart compares the total number of pizzas sold and orders placed across categories. The Classic category outperforms others, followed by Supreme, Veggie, and Chicken.
+        </p>
+
+        <h2>Dashboard 2: Best/Worst Sellers</h2>
+        <h3>Top 5 Pizzas by Revenue</h3>
+        <p>
+            The Thai Chicken Pizza leads with $43.43K in revenue, followed by the Barbecue Chicken Pizza and the California Chicken Pizza. These findings help identify the most profitable pizzas.
+        </p>
+
+        <h3>Bottom 5 Pizzas by Revenue</h3>
+        <p>
+            Pizzas such as the Brie Carre Pizza and Green Garden Pizza generate the least revenue. These pizzas could benefit from enhanced marketing or recipe modifications to boost appeal.
+        </p>
+
+        <h3>Top 5 Pizzas by Total Pizzas Sold</h3>
+        <p>
+            The Classic Deluxe Pizza tops the chart with 2.45K units sold, followed by the Barbecue Chicken and Hawaiian pizzas. These results highlight customer favorites based on quantity.
+        </p>
+
+        <h3>Bottom 5 Pizzas by Total Pizzas Sold</h3>
+        <p>
+            Pizzas like the Soppressata Pizza and Brie Carre Pizza have the lowest sales volumes, suggesting limited customer interest or availability.
+        </p>
+
+        <h3>Interactive Filters</h3>
+        <p>
+            The dashboards feature dynamic filters, allowing users to:
+        </p>
+        <ul>
+            <li>Select specific pizza categories such as Classic, Supreme, Veggie, or Chicken.</li>
+            <li>Adjust the date range to focus on seasonal or historical trends.</li>
+        </ul>
+
+        <!-- Dashboard Image -->
+        <h2>Dashboard Visualization</h2>
+        <p>Below is a snapshot of the dashboards for a quick preview:</p>
+        <img src="customer-data/assets/dashboard2.png" alt="Pizza Sales Dashboard Snapshot">
+
+        <h2>Interactive Dashboard Link</h2>
+        <p>
+            Explore the full dashboard here:
+            <a href="https://public.tableau.com/views/PizzaSales_17354142507290/Home" target="_blank" class="btn btn-primary">View the Dashboard</a>
+        </p>
+
+        <footer>
+            <p>© 2025 Pizza Sales Report | Designed by <a href="#">Tulsi Mandira</a></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
