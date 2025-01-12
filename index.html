@@ -17,27 +17,45 @@
             padding: 0;
         }
 
+        nav {
+            background-color: #007bff;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 50px auto;
             background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            padding: 50px;
             text-align: center;
         }
 
         h1 {
             color: #007bff;
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         p {
             font-size: 1.2rem;
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         ul {
@@ -46,28 +64,31 @@
         }
 
         ul li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
 
         ul li a {
             text-decoration: none;
             color: #ffffff;
             background: linear-gradient(to right, #007bff, #0056b3);
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 50px;
             font-weight: 600;
             font-size: 1rem;
             display: inline-block;
             transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.3);
         }
 
         ul li a:hover {
             background: #0056b3;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+            transform: scale(1.05);
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 50px;
+            text-align: center;
             color: #777;
             font-size: 0.9rem;
         }
@@ -75,24 +96,88 @@
         footer a {
             text-decoration: none;
             color: #007bff;
+            font-weight: 600;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
+
+        .about, .contact {
+            text-align: center;
+        }
+
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2, .contact h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: linear-gradient(to right, #28a745, #218838);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact form button:hover {
+            background: #218838;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="container">
         <h1>Welcome to My Portfolio</h1>
-        <p>Explore my projects below and dive into the work I'm passionate about:</p>
+        <p>Explore my featured projects below and discover the work I'm passionate about:</p>
         <ul>
-            <li><a href="pizza-sales/">Pizza Sales Dashboard</a></li>
-            <li><a href="british-airways-review/">British Airways Review Dashboard</a></li>
-            <li><a href="customer-data/">Customer Analysis Dashboard</a></li>
-            
+            <li><a href="pizza-sales/" target="_blank">Pizza Sales Dashboard</a></li>
+            <li><a href="british-airways-review/" target="_blank">British Airways Review Dashboard</a></li>
+            <li><a href="customer-data/" target="_blank">Customer Analysis Dashboard</a></li>
         </ul>
-    </div>
+    </section>
+
+    <section id="about" class="container about">
+        <img src="https://via.placeholder.com/150" alt="Your Photo">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a passionate [Your Profession, e.g., Data Analyst, Web Developer]. I specialize in [mention your skills briefly, e.g., data analysis, web development, etc.]. I love solving complex problems and creating impactful solutions.</p>
+        <p>When I'm not working, I enjoy [mention hobbies/interests, e.g., hiking, photography, etc.].</p>
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <p>© 2025 My Portfolio | Designed by <a href="#">Your Name</a></p>
     </footer>
