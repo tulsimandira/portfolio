@@ -7,11 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: #e3f2fd;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
             color: #333;
             margin: 0;
             padding: 0;
@@ -19,56 +19,51 @@
 
         .container {
             background: #ffffff;
-            padding: 40px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 50px auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         h1, h2, h3 {
             color: #007bff;
             font-weight: 600;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 20px;
         }
 
-        h2 {
-            margin-top: 20px;
-            font-size: 1.8rem;
-        }
-
-        h3 {
-            margin-top: 15px;
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        p.lead {
+            text-align: center;
+            font-size: 1.2rem;
             color: #555;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: #555;
-        }
-
-        ul li {
-            margin: 5px 0;
+            margin-bottom: 30px;
         }
 
         img {
             max-width: 100%;
             border-radius: 10px;
-            margin-top: 30px;
+            margin-top: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -85,29 +80,33 @@
             color: #ffdd57;
             text-decoration: none;
         }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Customer Analysis Dashboard</h1>
+        <p class="lead">Interactive insights into customer purchasing behavior, revenue trends, and sales patterns.</p>
+        <hr>
+
+        <!-- Storytelling Paragraph -->
         <p>
             The Customer Analysis Dashboard provides a detailed and interactive view of customer purchasing behavior, revenue generation, and sales patterns across various dimensions. 
-            It showcases how businesses can derive actionable insights to understand performance better, identify growth opportunities, and refine strategies.
+            This dashboard helps businesses understand their performance better, identify growth opportunities, and refine strategies.
         </p>
-        <p>This dashboard analyzes customer behavior across categories, regions, genders, age groups, and time periods, with dynamic filters to explore specific segments. It answers crucial questions like:</p>
-        <ul>
-            <li>Which product categories contribute the most to revenue?</li>
-            <li>How does revenue vary across regions and states?</li>
-            <li>What demographic segments are the primary contributors?</li>
-            <li>How do discounts affect quantity ordered?</li>
-        </ul>
+        <p>
+            It offers analysis across different categories, regions, genders, age groups, and time periods. Users can answer critical questions such as:
+            <ul>
+                <li>Which product categories contribute the most to revenue?</li>
+                <li>How does revenue vary across regions and states?</li>
+                <li>What demographic segments are the primary contributors?</li>
+                <li>How do discounts affect quantity ordered?</li>
+            </ul>
+        </p>
 
         <h2>Revenue by Categories</h2>
-        <p>The dashboard breaks down revenue into 15 distinct product categories:</p>
+        <p>
+            The dashboard breaks down revenue into 15 distinct product categories:
+        </p>
         <ul>
             <li>Appliances</li>
             <li>Beauty & Grooming</li>
@@ -125,93 +124,60 @@
             <li>Superstore</li>
             <li>Women’s Fashion</li>
         </ul>
-        <p>
-            Key insights include:
-            <ul>
-                <li>Mobiles & Tablets and Women’s Fashion dominate revenue.</li>
-                <li>Appliances, Beauty & Grooming, and Superstore also show strong contributions.</li>
-                <li>Categories like Books, Health & Sports, and Soghaat show potential for growth.</li>
-            </ul>
-        </p>
 
         <h2>Revenue per State</h2>
         <p>
-            The heatmap visualizes revenue distribution across states:
-            <ul>
-                <li>High-performing states include California, Texas, and New York.</li>
-                <li>Lower contributions are observed in states like Alaska and Vermont.</li>
-            </ul>
+            A heatmap visualizes sales distribution across the United States. States like California, Texas, and New York consistently generate high revenue, 
+            while smaller contributions are observed in less populous states such as Alaska and Vermont.
         </p>
 
         <h2>Monthly Revenue Trends</h2>
         <p>
-            The Month-Wise Revenue chart tracks revenue trends over time:
-            <ul>
-                <li>Revenue spikes in December (holiday shopping) and April (spring promotions).</li>
-                <li>Lower revenue is observed in January and July, indicating off-peak seasons.</li>
-            </ul>
+            A line chart tracks sales performance over time, highlighting peaks during December (holiday shopping) and April (spring promotions). 
+            Lower revenue periods like January and July indicate off-peak seasons.
         </p>
 
         <h2>Region-Wise Revenue Share</h2>
         <p>
-            The pie chart illustrates revenue contribution by region:
-            <ul>
-                <li>South: 38.37%</li>
-                <li>Midwest: 26.93%</li>
-                <li>West: 17.60%</li>
-                <li>Northeast: 17.10%</li>
-            </ul>
+            A pie chart shows the revenue split by region. The South leads with 38.37% of total revenue, followed by the Midwest (26.93%), West (17.60%), and Northeast (17.10%).
         </p>
 
         <h2>Gender-Wise Sales Analysis</h2>
         <p>
-            The Gender-Wise Sales chart highlights revenue contributions by gender:
-            <ul>
-                <li>Female customers dominate revenue in Women’s Fashion and Beauty & Grooming.</li>
-                <li>Male customers lead in Mobiles & Tablets and Appliances.</li>
-                <li>Categories like Books and School & Education show balanced contributions.</li>
-            </ul>
+            A bar chart divides revenue by gender across categories. For example, female customers dominate in Women’s Fashion ($15.04M) and Beauty & Grooming ($1.37M), 
+            while male customers lead in Mobiles & Tablets ($66.27M) and Appliances ($13.45M).
         </p>
 
         <h2>Age-Wise Revenue Analysis</h2>
         <p>
-            The Age-Wise Revenue chart explains:
-            <ul>
-                <li>The 30-40 age group generates the highest revenue ($44.8M).</li>
-                <li>The 60-70 age group follows closely with $41.1M.</li>
-                <li>Young customers (<20 years) and older customers (>70 years) contribute the least.</li>
-            </ul>
+            A bar chart shows revenue by age group. The 30-40 age group contributes the most ($44.8M), while the <20 group contributes the least ($7M).
         </p>
 
         <h2>Quantity-Discount Correlation</h2>
         <p>
-            The scatter plot shows:
-            <ul>
-                <li>Higher discounts generally lead to larger quantities being ordered.</li>
-                <li>Excessive discounts show diminishing returns, emphasizing the need for strategic pricing.</li>
-            </ul>
+            A scatter plot analyzes how discounts impact the quantity ordered. It shows that higher discounts often increase order quantities, 
+            but extreme discounts may result in diminishing returns.
         </p>
 
         <h2>Interactive Features</h2>
-        <ul>
-            <li>Filter by category, gender, age group, and region for detailed analysis.</li>
-            <li>Adjust time range to explore seasonal trends or specific years.</li>
-        </ul>
+        <p>
+            The dashboard includes filters for categories, time ranges, gender, age groups, and regions, allowing users to uncover tailored insights.
+        </p>
 
         <h2>Dashboard Visualization</h2>
         <p>Below is a snapshot of the dashboard for a quick preview:</p>
-        <img src="assets/images/dashboard3.png" alt="Customer Analysis Dashboard Snapshot">
+        <img src="customer-data/assets/images/dashboard2.png" alt="Customer Analysis Dashboard Snapshot">
 
         <h2>Interactive Dashboard Link</h2>
         <p>
             Explore the full dashboard here:
             <a href="https://public.tableau.com/views/CustomerAnalysis_17336741702100/Dashboard1" target="_blank" class="btn btn-primary">View the Dashboard</a>
         </p>
-    </div>
 
-    <footer>
-        <p>© 2025 Customer Analysis Dashboard | Designed by <a href="#">Tulsi Mandira</a></p>
-    </footer>
+        <footer>
+            <p>© 2025 Customer Analysis Dashboard | Designed by <a href="#">Tulsi Mandira</a></p>
+        </footer>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
