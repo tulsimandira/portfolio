@@ -1,4 +1,4 @@
-# British Airways Customer Feedback Analysis
+# British Airways Review
 
 British Airways has long been a symbol of trust and luxury in air travel. Yet, like every airline, it faces its share of challenges in meeting the diverse expectations of its customers. What do passengers truly think of their experiences? What makes them choose British Airways repeatedly, and what pushes them toward alternatives? This project dives deep into the voice of the customer, uncovering insights hidden in years of reviews to tell a data-driven story about satisfaction, strengths, and opportunities for improvement.
 
