@@ -187,21 +187,18 @@ The **Filter Panel** allowed for dynamic exploration of the dashboard by enablin
 - **Purpose:** Analyze sales by Tier 1 (urban), Tier 2 (suburban), and Tier 3 (rural) outlets.
 - **How It Works:** Selecting a tier dynamically updates the visuals to reflect metrics for that location type.
 
-![Filter Example 1](https://prod-files-secure.s3.us-west-2.amazonaws.com/d726f00f-ae88-4ffd-b00b-913fb8e98b6f/be3ed458-8254-4f9b-bdd7-00404a866464/image.png)
 
 ### **2. Outlet Size Filter**
 
 - **Purpose:** Segment performance by outlet size (High, Medium, Small).
 - **How It Works:** Changing the filter reveals how metrics like sales and ratings vary by store size.
 
-![Filter Example 2](https://prod-files-secure.s3.us-west-2.amazonaws.com/d726f00f-ae88-4ffd-b00b-913fb8e98b6f/dd9e7210-862f-42ad-9ffb-201af9235f28/image.png)
 
 ### **3. Outlet Type Filter**
 
 - **Purpose:** Explore metrics for Grocery Stores and different Supermarket Types.
 - **How It Works:** Filtering by outlet type updates the dashboard to focus on performance trends for the selected format.
 
-![Filter Example 3](https://prod-files-secure.s3.us-west-2.amazonaws.com/d726f00f-ae88-4ffd-b00b-913fb8e98b6f/4762de0e-6e9d-40ac-bc70-b2b3aca64270/image.png)
 
 ---
 
