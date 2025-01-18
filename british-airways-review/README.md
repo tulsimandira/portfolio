@@ -51,8 +51,3 @@ Explore the full dashboard here:
 
 [British Airways Review](https://public.tableau.com/app/profile/tulsi.mandira/viz/BritishAirwaysReview_17354789714040/Dashboard1)
 
-## **Dashboard Visualization**
-
-Below is a snapshot of the dashboard for a quick preview:
-
-```![Dashboard Preview](https://prod-files-secure.s3.us-west-2.amazonaws.com/d726f00f-ae88-4ffd-b00b-913fb8e98b6f/d2fe3dc3-94b9-4ff4-b7f2-8f1c50b3eea8/pic1.png)
